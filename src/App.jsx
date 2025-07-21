@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "tailwindcss";
 import React from "react";
 
-const contractAddress = "0x9D1eb059977D71E1A21BdebD1F700d4A39744A70";
+const contractAddress = "0x5342856ae2091fcf00b3e319f8f2a5cb6b3c9a98";
 
 function App() {
   const [text, setText] = useState("");
@@ -34,7 +34,6 @@ function App() {
         await tx.wait();
         toast.success("Message set successfully!");
         setText("");
-        // Optionally refresh the message
         handleGet();
       } else {
         toast.error("MetaMask not found. Please install MetaMask to use this application.");
