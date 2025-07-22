@@ -65,10 +65,10 @@ function App() {
   };
 
   // Fetch message on mount
-  React.useEffect(() => {
-    handleGet();
-    // eslint-disable-next-line
-  }, []);
+  // React.useEffect(() => {
+  //   handleGet();
+  //   // eslint-disable-next-line
+  // }, []);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100">
